@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <img src="../../Img/logo.png" alt="Logo" />
+      </div>
+      <div class="btn-container">
+        <button class="btn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-link"><a href="">Home</a></li>
+        <li class="nav-link"><a href="">About</a></li>
+        <li class="nav-link"><a href="">Menu</a></li>
+        <li class="nav-link"><a href="">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <main class="grid-container">
+      <h1 class="heading">Drinks</h1>
+
+      <!--frapuccino -->
+      <section class="section-one">
+        <a href="" class="product-container">
+          <div class="frapuccino">
+            <img src="../../img-product/coffee.png" alt="" />
+          </div>
+          <h2 class="name">FRAPUCCINO</h2>
+        </a>
+      </section>
+
+      <section class="section-two">
+        <div class="product-container">
+          <div class="ice-coffee">
+            <img src="../../img-product/ice-coffee.png " />
+          </div>
+          <h2 class="name"><a href="">ICE COFFEE</a></h2>
+        </div>
+      </section>
+      <section class="section-three"></section>
+      <section class="section-four"></section>
+    </main>
+    <script>
+      const menuButton = document.querySelector(".btn");
+      const navList = document.querySelector(".nav-list");
+
+      menuButton.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
